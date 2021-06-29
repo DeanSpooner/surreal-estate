@@ -12,6 +12,8 @@ This project is currently being built as part of the Manchester Codes front-end 
 
 ## Latest updates:
 
+- 29th June 2021, 10:27pm - created and uploaded initial logo and used as the site's favicon;
+
 - 29th June 2021, 8:35pm - initialised project and added basic styling, and removed all unnecessary elements and properties included with React.
 
 ## Built with:
@@ -27,13 +29,13 @@ This project is currently being built as part of the Manchester Codes front-end 
 - Jest
 - React Testing Library
 
-## How to install
+## How to install:
 
     $ git clone https://github.com/deanspooner/surreal-estae
     $ cd surreal-estate
     $ npm install
 
-## How to run
+## How to run:
 
     $ npm start
 
@@ -41,7 +43,7 @@ This will run the Surreal Estate web app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.\
 If you make and save any edits or changes, the page will reload to show these.
 
-## Test
+## How to test
 
     $ npm test
 
