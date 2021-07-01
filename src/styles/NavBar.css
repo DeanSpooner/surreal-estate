@@ -1,0 +1,34 @@
+.NavBar {
+  background-color: #68688e;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: solid rgb(109, 92, 121) 88e 3px;
+  width: 100%;
+}
+
+.surreal-title {
+  align-self: center;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.srlogo {
+  align-self: center;
+  padding: 0.5em;
+  width: 3%;
+}
+
+.navbar-links {
+  align-self: center;
+}
+
+.navbar-links-item {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0;
+  padding-left: 3em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
