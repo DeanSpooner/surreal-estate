@@ -12,6 +12,8 @@ This project is currently being built as part of the Manchester Codes front-end 
 
 ## Latest updates:
 
+- 1st July 2021, 10:09pm - created basic navbar with React router functionality;
+
 - 29th June 2021, 10:27pm - created and uploaded initial logo and used as the site's favicon;
 
 - 29th June 2021, 8:35pm - initialised project and added basic styling, and removed all unnecessary elements and properties included with React.
