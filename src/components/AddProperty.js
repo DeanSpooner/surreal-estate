@@ -73,6 +73,7 @@ const AddProperty = () => {
               placeholder="3"
               autoComplete="none"
               type="number"
+              max="10"
               className="form-bedrooms-input"
             />
           </label>
@@ -88,13 +89,14 @@ const AddProperty = () => {
               placeholder="2"
               autoComplete="none"
               type="number"
+              max="10"
               className="form-bathrooms-input"
             />
           </label>
         </div>
         <div className="form-field form-field-price">
           <label htmlFor="price">
-            Price:
+            Price: £
             <input
               id="price"
               name="price"
@@ -103,6 +105,9 @@ const AddProperty = () => {
               placeholder="125000"
               autoComplete="none"
               type="number"
+              min="5000"
+              max="10000000"
+              step="5000"
               className="form-price-input"
             />
           </label>
