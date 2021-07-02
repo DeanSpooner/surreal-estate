@@ -7,15 +7,11 @@ import "../styles/App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-testid="app">
       <NavBar />
       <Switch>
-        <Route exact path="/">
-          <Properties />
-        </Route>
-        <Route exact path="/add-property">
-          <AddProperty />
-        </Route>
+        <Route exact path="/" component={Properties} />
+        <Route exact path="/add-property" component={AddProperty} />
       </Switch>
     </div>
   );

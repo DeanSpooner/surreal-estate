@@ -1,0 +1,42 @@
+.AddProperty {
+  padding: 1em;
+}
+
+p {
+  font-size: 2em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.form {
+  background-color: #46384f;
+  list-style-type: none;
+  padding: 0;
+  border-radius: 3px;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+  width: 350px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+  font-size: 1em;
+  height: 2em;
+  flex: 0 0 200px;
+  margin-left: 2em;
+}
+button {
+  background: rgb(103, 47, 176);
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+  margin-bottom: 1em;
+}

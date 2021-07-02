@@ -12,6 +12,8 @@ This project is currently being built as part of the Manchester Codes front-end 
 
 ## Latest updates:
 
+- 2nd July 2021, 10:05pm - added "Add Property" form with state and handlers for fields and inputs. Basic styling and formatting included, and tested correctly.
+
 - 1st July 2021, 10:09pm - created basic navbar with React router functionality;
 
 - 29th June 2021, 10:27pm - created and uploaded initial logo and used as the site's favicon;
