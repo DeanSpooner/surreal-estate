@@ -12,26 +12,28 @@ This project is currently being built as part of the Manchester Codes front-end 
 
 ## Latest updates:
 
-- 2nd July 2021, 10:05pm - added "Add Property" form with state and handlers for fields and inputs. Basic styling and formatting included, and tested correctly;
+- 4th July 2021 - Axios installed and implemented to add API posting capability to the "Add A Property" page's form;
 
-- 1st July 2021, 10:09pm - created basic navbar with React router functionality;
+- 2nd July 2021 - added "Add Property" form with state and handlers for fields and inputs. Basic styling and formatting included, and tested correctly;
 
-- 29th June 2021, 10:27pm - created and uploaded initial logo and used as the site's favicon;
+- 1st July 2021 - created basic navbar with React router functionality;
 
-- 29th June 2021, 8:35pm - initialised project and added basic styling, and removed all unnecessary elements and properties included with React.
+- 29th June 2021 - created and uploaded initial logo and used as the site's favicon;
+
+- 29th June 2021 - initialised project and added basic styling, and removed all unnecessary elements and properties included with React.
 
 ## Built with:
 
-- React
-- HTML
-- CSS
-- JavaScript
-- Node.js
+- React;
+- HTML;
+- CSS;
+- JavaScript;
+- Node.js.
 
 ## Tested with:
 
-- Jest
-- React Testing Library
+- Jest;
+- React Testing Library.
 
 ## How to install:
 
@@ -47,7 +49,7 @@ This will run the Surreal Estate web app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.\
 If you make and save any edits or changes, the page will reload to show these.
 
-## How to test
+## How to test:
 
     $ npm test
 

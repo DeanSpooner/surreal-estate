@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import postProperty from "../requests/postProperty";
 import "../styles/AddProperty.css";
 
 const AddProperty = () => {
@@ -18,7 +19,7 @@ const AddProperty = () => {
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    console.log(fields);
+    postProperty(fields);
   };
 
   const handleFieldChange = (event) => {
@@ -36,6 +37,7 @@ const AddProperty = () => {
               id="title"
               name="title"
               value={fields.title}
+              placeholder="2 bed detached house"
               onChange={handleFieldChange}
               className="form-title-input"
               data-testid="form-title-input"
