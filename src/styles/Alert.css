@@ -1,0 +1,28 @@
+.Alert {
+  border-radius: 12px;
+  display: inline-block;
+  margin-left: 3em;
+  padding: 0.5em 0;
+  text-align: center;
+  width: 200px;
+}
+
+.alert-success {
+  background-color: #68e3a9;
+  color: #000;
+  animation: alert-notification 2s;
+}
+
+.alert-error {
+  background-color: red;
+  animation: alert-notification 2s;
+}
+
+@keyframes alert-notification {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

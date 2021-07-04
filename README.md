@@ -12,6 +12,8 @@ This project is currently being built as part of the Manchester Codes front-end 
 
 ## Latest updates:
 
+- 4th July 2021 - Alert message component added, tested and implemented to inform user if their "Add A Property" has been posted successfully or not to the API;
+
 - 4th July 2021 - Axios installed and implemented to add API posting capability to the "Add A Property" page's form;
 
 - 2nd July 2021 - added "Add Property" form with state and handlers for fields and inputs. Basic styling and formatting included, and tested correctly;
@@ -28,7 +30,8 @@ This project is currently being built as part of the Manchester Codes front-end 
 - HTML;
 - CSS;
 - JavaScript;
-- Node.js.
+- Node.js;
+- Axios.
 
 ## Tested with:
 

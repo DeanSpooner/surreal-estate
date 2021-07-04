@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import AddProperty from "../components/AddProperty";
+import AddProperty from "../../components/AddProperty";
 
 describe("AddProperty", () => {
   const { asFragment } = render(<AddProperty />);

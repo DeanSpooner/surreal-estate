@@ -17,12 +17,13 @@ exports[`AddProperty renders correctly 1`] = `
         <label
           for="title"
         >
-          Title:
+          Description:
           <input
             class="form-title-input"
             data-testid="form-title-input"
             id="title"
             name="title"
+            placeholder="2 bed detached house"
             value=""
           />
         </label>
@@ -88,6 +89,7 @@ exports[`AddProperty renders correctly 1`] = `
             autocomplete="none"
             class="form-bedrooms-input"
             id="bedrooms"
+            max="10"
             name="bedrooms"
             placeholder="3"
             type="number"
@@ -106,6 +108,7 @@ exports[`AddProperty renders correctly 1`] = `
             autocomplete="none"
             class="form-bathrooms-input"
             id="bathrooms"
+            max="10"
             name="bathrooms"
             placeholder="2"
             type="number"
@@ -119,13 +122,16 @@ exports[`AddProperty renders correctly 1`] = `
         <label
           for="price"
         >
-          Price:
+          Price: £
           <input
             autocomplete="none"
             class="form-price-input"
             id="price"
+            max="10000000"
+            min="5000"
             name="price"
             placeholder="125000"
+            step="5000"
             type="number"
             value=""
           />

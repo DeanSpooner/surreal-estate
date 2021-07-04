@@ -2,15 +2,10 @@
 
 import axios from "axios";
 
-const postProperty = ({
-  title,
-  type,
-  bedrooms,
-  bathrooms,
-  price,
-  city,
-  email,
-}) => {
+const postProperty = (
+  { title, type, bedrooms, bathrooms, price, city, email },
+  setAlert
+) => {
   const endpoint = "http://localhost:4000/api/v1/PropertyListing";
 
   return axios
@@ -24,16 +19,18 @@ const postProperty = ({
       email,
     })
     .then((response) => {
+      setAlert({
+        message: "Property Added",
+        isSuccess: true,
+      });
       console.log(response);
     })
     .catch((error) => {
-      const { status } = error.response;
-      if (status === 404) {
-        console.error("Incomplete fields", error);
-      }
-      if (status === 500) {
-        console.error("Server error", error);
-      }
+      setAlert({
+        message: "Server error. Please try again later.",
+        isSuccess: false,
+      });
+      console.error("Server error", error);
     });
 };
 
