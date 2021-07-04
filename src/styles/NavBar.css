@@ -9,6 +9,8 @@
 .surreal-title {
   align-self: center;
   font-family: "Comfortaa", sans-serif;
+  position: relative;
+  top: 0.5em;
 }
 
 .srlogo {

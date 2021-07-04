@@ -35,8 +35,23 @@ button {
 }
 button {
   background: rgb(103, 47, 176);
-  color: white;
   border: 0;
-  padding: 10px 20px;
+  border-radius: 12px;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  padding: 10px 20px 30px;
   margin-bottom: 1em;
+}
+
+button:hover {
+  animation: add-hover 1s forwards;
+}
+
+@keyframes add-hover {
+  from {
+    background: rgb(103, 47, 176);
+  }
+  to {
+    background: rgb(134, 97, 181);
+  }
 }

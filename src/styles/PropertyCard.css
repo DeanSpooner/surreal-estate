@@ -1,0 +1,47 @@
+.propertyCard {
+  background-color: #b3a5d0;
+  color: #000;
+  margin: 1em;
+  width: (100% - 2em);
+}
+
+h2,
+li {
+  list-style-type: none;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.bath,
+.bed,
+.pound {
+  position: relative;
+  top: 0.2em;
+  width: 1.5em;
+}
+
+.email {
+  position: relative;
+  top: 0.2em;
+  width: 1em;
+}
+
+.propertyCard__title {
+  padding-top: 1em;
+}
+
+.propertyCard__email {
+  background-color: rgb(131, 21, 199);
+  border-radius: 12px 12px 0 0;
+  font-size: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  width: inherit;
+}
+
+.propertyCard__email > a {
+  position: relative;
+  top: 0.5em;
+}
