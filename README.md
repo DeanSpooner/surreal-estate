@@ -12,6 +12,8 @@ This project is currently being built as part of the Manchester Codes front-end 
 
 ## Latest updates:
 
+- 8th July 2021 - linked "View Properties" page to API, with appropriate error message if any server issues exist;
+
 - 4th July 2021 - PropertyCard component added, tested and implemented (currently with dummy data) to render details from different properties as cards on the "View Properties" page;
 
 - 4th July 2021 - Alert message component added, tested and implemented to inform user if their "Add A Property" has been posted successfully or not to the API;

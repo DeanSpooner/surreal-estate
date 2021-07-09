@@ -1,8 +1,10 @@
 .propertyCard {
   background-color: #b3a5d0;
   color: #000;
+  display: inline-block;
   margin: 1em;
-  width: (100% - 2em);
+  width: 45%;
+  border-radius: 12px;
 }
 
 h2,
@@ -38,7 +40,9 @@ li {
   margin-right: 1em;
   padding-bottom: 1em;
   text-align: center;
-  width: inherit;
+  width: (100% - 2em);
+  position: relative;
+  top: 1em;
 }
 
 .propertyCard__email > a {

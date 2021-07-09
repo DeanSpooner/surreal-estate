@@ -1,21 +1,41 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import PropertyCard from "./PropertyCard";
+import Alert from "./Alert";
 
 const Properties = () => {
-  const props = {
-    title: "2 bed flat",
-    type: "Flat",
-    bathrooms: 1,
-    bedrooms: 2,
-    price: 125000,
-    city: "Liverpool",
-    email: "dean.spooner@here.com",
+  const initialState = {
+    properties: [],
+    alert: {
+      message: "",
+      isSuccess: true,
+    },
   };
+
+  const [properties, setProperties] = useState(initialState.properties);
+  const [alert, setAlert] = useState(initialState.alert);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4000/api/v1/PropertyListing")
+      .then((response) => {
+        setProperties(response.data);
+      })
+      .catch((error) => {
+        setAlert({
+          message: "Server error. Please try again later.",
+          isSuccess: false,
+        });
+        console.error("Server error", error);
+      });
+  }, []);
 
   return (
     <div>
-      Properties Page
-      <PropertyCard props={props} />
+      {properties.map((property) => (
+        <PropertyCard key={property._id} {...property} className="col" />
+      ))}
+      <Alert message={alert.message} success={alert.isSuccess} />
     </div>
   );
 };

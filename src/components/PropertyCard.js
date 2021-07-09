@@ -6,8 +6,15 @@ import bed from "../images/bed.png";
 import pound from "../images/pound.png";
 import emailpic from "../images/email.png";
 
-const PropertyCard = ({ props }) => {
-  const { title, type, bathrooms, bedrooms, price, city, email } = props;
+const PropertyCard = ({
+  title,
+  type,
+  bathrooms,
+  bedrooms,
+  price,
+  city,
+  email,
+}) => {
   return (
     <div className="propertyCard">
       <h2 className="propertyCard__title" data-testid="propertyCard__title">
@@ -42,7 +49,6 @@ const PropertyCard = ({ props }) => {
 export default PropertyCard;
 
 PropertyCard.propTypes = {
-  props: PropTypes.shape.isRequired,
   title: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   bathrooms: PropTypes.number.isRequired,
