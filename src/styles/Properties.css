@@ -1,0 +1,7 @@
+.properties {
+  display: flex;
+}
+
+.propertyCard__container {
+  flex: 80%;
+}

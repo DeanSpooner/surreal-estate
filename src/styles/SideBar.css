@@ -1,0 +1,53 @@
+.sideBar {
+  background-color: #b3a5d0;
+  flex: 20%;
+  left: 0;
+}
+
+.sideBar__input {
+  border: solid 2px #545474;
+  border-radius: 12px;
+  font-family: "Fira Sans", sans-serif;
+  height: 40px;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.sideBar__input:focus {
+  border-color: sandybrown;
+  outline: none;
+}
+.sideBar__button {
+  border-radius: 25%;
+  height: 40px;
+  position: relative;
+  left: 8em;
+  margin-top: 1em;
+  width: 40px;
+}
+
+.sideBar__magnifier {
+  position: relative;
+  right: 8px;
+  width: 20px;
+}
+
+.sideBar__item {
+  color: #000;
+  display: block;
+  font-size: 1.5em;
+  margin: 2em 0 2em 1em;
+}
+.sideBar__Manchester {
+  margin-top: 0;
+}
+
+.sideBar__item:hover {
+  color: rgb(131, 21, 199);
+}
+
+.sideBar__ascending,
+.sideBar__descending {
+  font-size: 1.2em;
+  font-style: italic;
+}

@@ -12,6 +12,8 @@ This project is currently being built as part of the Manchester Codes front-end 
 
 ## Latest updates:
 
+- 10th July 2021 - added SideBar component, allowing filtered results by city or search term, and to sort results by price;
+
 - 8th July 2021 - linked "View Properties" page to API, with appropriate error message if any server issues exist;
 
 - 4th July 2021 - PropertyCard component added, tested and implemented (currently with dummy data) to render details from different properties as cards on the "View Properties" page;
