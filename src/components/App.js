@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Properties from "./Properties";
@@ -6,9 +6,33 @@ import AddProperty from "./AddProperty";
 import "../styles/App.css";
 
 function App() {
+  const initialState = {
+    userID: {
+      id: "",
+      imgURL: "",
+      userName: "",
+    },
+  };
+
+  const [userID, setUserID] = useState(initialState.userID);
+
+  const handleLogin = (response) => {
+    setUserID({
+      id: response.id,
+      imgURL: response.picture.data.url,
+      userName: response.name,
+    });
+  };
+
+  const handleLogout = () => {
+    window.FB.logout(() => {
+      setUserID(initialState.userID);
+    });
+  };
+
   return (
     <div className="App" data-testid="app">
-      <NavBar />
+      <NavBar onLogin={handleLogin} onLogout={handleLogout} userID={userID} />
       <Switch>
         <Route exact path="/" component={Properties} />
         <Route exact path="/add-property" component={AddProperty} />

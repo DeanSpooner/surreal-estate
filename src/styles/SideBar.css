@@ -32,6 +32,10 @@
   width: 20px;
 }
 
+.sideBar__button:hover {
+  animation: add-hover 1s forwards;
+}
+
 .sideBar__item {
   color: #000;
   display: block;

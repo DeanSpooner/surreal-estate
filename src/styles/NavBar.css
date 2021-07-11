@@ -34,3 +34,28 @@ a {
   color: #fff;
   text-decoration: none;
 }
+
+.facebook-login {
+  background: #1552cd;
+  margin: 0;
+}
+
+.facebook-login:hover {
+  animation: facebooklogin 1s forwards;
+}
+
+.facebook-photo {
+  border-radius: 50%;
+  margin-left: 1em;
+  position: absolute;
+  width: 3%;
+}
+
+@keyframes facebooklogin {
+  from {
+    background: #1552cd;
+  }
+  to {
+    background: #4267b2;
+  }
+}

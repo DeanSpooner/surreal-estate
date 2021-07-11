@@ -43,7 +43,7 @@ button {
   margin-bottom: 1em;
 }
 
-button:hover {
+.form-button:hover {
   animation: add-hover 1s forwards;
 }
 

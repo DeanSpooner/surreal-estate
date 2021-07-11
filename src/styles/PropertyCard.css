@@ -49,3 +49,7 @@ li {
   position: relative;
   top: 0.5em;
 }
+
+.propertyCard__email:hover {
+  animation: add-hover 1s forwards;
+}
