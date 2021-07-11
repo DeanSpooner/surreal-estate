@@ -7,6 +7,7 @@ import pound from "../images/pound.png";
 import emailpic from "../images/email.png";
 
 const PropertyCard = ({
+  _id,
   title,
   type,
   bathrooms,
@@ -14,6 +15,8 @@ const PropertyCard = ({
   price,
   city,
   email,
+  onSaveProperty,
+  userID,
 }) => {
   return (
     <div className="propertyCard">
@@ -42,6 +45,13 @@ const PropertyCard = ({
           email seller
         </a>
       </li>
+      {userID && (
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
+        <a href="#" className="save" onClick={() => onSaveProperty(_id)}>
+          <i className="fas fa-star" />
+          Save
+        </a>
+      )}
     </div>
   );
 };
@@ -49,6 +59,7 @@ const PropertyCard = ({
 export default PropertyCard;
 
 PropertyCard.propTypes = {
+  _id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   bathrooms: PropTypes.string.isRequired,
@@ -56,4 +67,6 @@ PropertyCard.propTypes = {
   price: PropTypes.string.isRequired,
   city: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
+  onSaveProperty: PropTypes.func.isRequired,
+  userID: PropTypes.string.isRequired,
 };

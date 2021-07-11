@@ -51,7 +51,11 @@ const NavBar = ({ onLogin, onLogout, userID }) => {
 export default NavBar;
 
 NavBar.propTypes = {
-  userID: PropTypes.shape.isRequired,
+  userID: PropTypes.shape({
+    id: PropTypes.string,
+    imgURL: PropTypes.string,
+    userName: PropTypes.string,
+  }).isRequired,
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
 };

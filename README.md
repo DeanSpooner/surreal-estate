@@ -12,6 +12,8 @@ This project is currently being built as part of the Manchester Codes front-end 
 
 ## Latest updates:
 
+- 11th July 2021 - added "Save" functionality for Facebook users;
+
 - 11th July 2021 - added working Facebook login compatability;
 
 - 10th July 2021 - added SideBar component, allowing filtered results by city or search term, and to sort results by price;

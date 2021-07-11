@@ -1,12 +1,13 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
 import PropertyCard from "./PropertyCard";
 import Alert from "./Alert";
 import SideBar from "./SideBar";
 import "../styles/Properties.css";
 
-const Properties = () => {
+const Properties = ({ userID }) => {
   const initialState = {
     properties: [],
     alert: {
@@ -19,6 +20,14 @@ const Properties = () => {
   const [alert, setAlert] = useState(initialState.alert);
 
   const { search } = useLocation();
+
+  const handleSaveProperty = async (propertyId) => {
+    await axios.post("http://localhost:4000/api/v1/Favourite", {
+      propertyListing: propertyId,
+      fbUserId: userID.id,
+    });
+  };
+
   useEffect(() => {
     axios
       .get(`http://localhost:4000/api/v1/PropertyListing${search}`)
@@ -46,12 +55,30 @@ const Properties = () => {
       <SideBar />
       <div className="propertyCard__container">
         {properties.map((property) => (
-          <PropertyCard key={property._id} {...property} className="col" />
+          <PropertyCard
+            key={property._id}
+            {...property}
+            className="col"
+            userID={userID}
+            onSaveProperty={handleSaveProperty}
+          />
         ))}
-        <Alert message={alert.message} success={alert.isSuccess} />
+        <Alert
+          message={alert.message}
+          success={alert.isSuccess}
+          setAlert={setAlert}
+        />
       </div>
     </div>
   );
 };
 
 export default Properties;
+
+Properties.propTypes = {
+  userID: PropTypes.shape({
+    id: PropTypes.string,
+    imgURL: PropTypes.string,
+    userName: PropTypes.string,
+  }).isRequired,
+};

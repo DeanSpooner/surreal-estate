@@ -34,7 +34,11 @@ function App() {
     <div className="App" data-testid="app">
       <NavBar onLogin={handleLogin} onLogout={handleLogout} userID={userID} />
       <Switch>
-        <Route exact path="/" component={Properties} />
+        <Route
+          exact
+          path="/"
+          render={(props) => <Properties {...props} userID={userID} />}
+        />
         <Route exact path="/add-property" component={AddProperty} />
       </Switch>
     </div>
