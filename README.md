@@ -50,7 +50,7 @@ This project is currently being built as part of the Manchester Codes front-end 
 
 ## How to install:
 
-    $ git clone https://github.com/deanspooner/surreal-estae
+    $ git clone https://github.com/deanspooner/surreal-estate
     $ cd surreal-estate
     $ npm install
 
